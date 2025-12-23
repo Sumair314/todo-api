@@ -1,3 +1,4 @@
+# render.yaml
 services:
   - type: web
     name: todo-api
@@ -11,8 +12,3 @@ services:
       - key: PORT
         value: "10000"
     healthCheckPath: /actuator/health
-
-  - type: postgres
-    name: todo-db
-    databaseName: todo_db
-    user: todo_user
